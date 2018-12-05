@@ -1,0 +1,24 @@
+<html>
+<head>
+<script type="text/javascript">
+window.onload = function() {
+  for (var i = 1; i < 100; ++i)
+    setTimeout(loadfunction, i * 5000, i);
+}
+function loadfunction(i) {
+  document.getElementById("myiframe" + i).src = "frame" + i + ".html"
+}
+</script>
+</head>
+<body>
+<iframe id="myiframe1"></iframe>
+<iframe id="myiframe2"></iframe>
+<iframe id="myiframe3"></iframe>
+<iframe id="myiframe4"></iframe>
+<iframe id="myiframe5"></iframe>
+<iframe id="myiframe6"></iframe>
+<iframe id="myiframe7"></iframe>
+<iframe id="myiframe8"></iframe>
+<iframe id="myiframe9"></iframe>
+</body>
+</html>
